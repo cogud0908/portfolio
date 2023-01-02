@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next dev",
+    "build:start": "next start"
   },
   "dependencies": {
     "@types/react": "17.0.2",
