@@ -338,7 +338,9 @@ select {
 select:disabled {
   opacity: 1;
 }
-[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not([type="time"])::-webkit-calendar-picker-indicator {
+[list]:not([type="date"]):not([type="datetime-local"]):not([type="month"]):not([type="week"]):not(
+    [type="time"]
+  )::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 button,
@@ -2483,7 +2485,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(
+    .invalid-feedback
+  ) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -10357,7 +10361,7 @@ ckquote {
   padding: 0.2rem 1rem;
   border-radius: 4px;
 }
-.page-heading-logo .client-logo {
+.page-heading-logo .logo {
   width: 160px;
 }
 .project-wrapper {

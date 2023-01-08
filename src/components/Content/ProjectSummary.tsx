@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectProps } from "./types";
 
-const Project: React.FC<ProjectProps> = (props) => {
+const ProjectSummary: React.FC<ProjectProps> = (props) => {
   const { content, href, skilles, thumbnail, title } = props;
 
   return (
@@ -38,4 +38,4 @@ const Project: React.FC<ProjectProps> = (props) => {
   );
 };
 
-export default Project;
+export default ProjectSummary;
