@@ -1,7 +1,8 @@
 import React from "react";
+import Project from "../../src/components/Project/Project";
 
 const electionApp = () => {
-  return <div>electionApp</div>;
+  return <Project project={"electionApp"} />;
 };
 
 export default electionApp;

@@ -1,78 +1,77 @@
 import React from "react";
+import Header from "../Project/Components/Header";
 
-const Project = () => {
+type ProjectType = "component" | "electionApp" | "electron" | "webStorage";
+
+interface ProjcetProps {
+  project: ProjectType;
+}
+
+const Project: React.FC<ProjcetProps> = (props) => {
+  const { project } = props;
+
   return (
     <>
-      <header className="header">
-        <div className="header-intro theme-bg-primary text-white py-5">
-          <div className="container position-relative">
-            <h2 className="page-heading mb-2">컴포넌트 개발/유지보수</h2>
-            <div className="page-heading-tagline">사내용 공통 컴포넌트 Library 개발 및 유지보수</div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <section className="project-wrapper single-col-max-width py-5 px-4 mx-auto">
         <div className="section-row">
           <div className="mb-5">
             <img className="img-fluid" src="/assets/images/projects/project-figure-main.jpg" alt="" />
           </div>
-          <h3 className="section-title">Project Background</h3>
+          <h3 className="section-title">프로젝트 배경</h3>
 
           <p>
-            Project summary goes here. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper
-            libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-            lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam
-            quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-            Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis
-            gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis
-            sed, nonummy id, metus.
+            회사 내에서 생산성을 높이기 위해 재사용이 높은 공통 컴포넌트를 개발하여 라이브러리로 관리함으로써 사용하기
+            편하고 범용성이 있는 컴포넌트 제작을 목표로 한 프로젝트입니다. 범용적으로 사용되는 컴포넌트를 개발한
+            프로젝트부터 키보드로만 Grid 형식의 Form Element를 입력 할 수 있게 만드는 프로젝트, Grid를 손쉽게 사용할 수
+            있는 프로젝트 등 회사에 필요한 공통 컴포넌트를 개발하였습니다.
           </p>
 
           <div className="alert bg-white shadow-sm mb-4">
             This template <strong>includes the original Sketch source file</strong> for making the browser window in the
-            carousel.
+            portfolio.
           </div>
 
-          <div id="project-carousel" className="theme-carousel carousel slide mb-5" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-bs-target="#project-carousel" data-bs-slide-to="0" className="active"></li>
-              <li data-bs-target="#project-carousel" data-bs-slide-to="1"></li>
-              <li data-bs-target="#project-carousel" data-bs-slide-to="2"></li>
+          <div id="project-portfolio" className="theme-portfolio portfolio slide mb-5" data-ride="portfolio">
+            <ol className="portfolio-indicators">
+              <li data-bs-target="#project-portfolio" data-bs-slide-to="0" className="active" />
+              <li data-bs-target="#project-portfolio" data-bs-slide-to="1" className="active" />
+              <li data-bs-target="#project-portfolio" data-bs-slide-to="2" className="active" />
             </ol>
 
-            <div className="carousel-inner">
-              <div className="carousel-item active">
+            <div className="portfolio-inner">
+              <div className="portfolio-item active">
                 <img className="d-block w-100" src="/assets/images/projects/project-slide-1.png" alt="" />
               </div>
-              <div className="carousel-item">
+              <div className="portfolio-item">
                 <img className="d-block w-100" src="/assets/images/projects/project-slide-2.png" alt="" />
               </div>
-              <div className="carousel-item">
+              <div className="portfolio-item">
                 <img className="d-block w-100" src="/assets/images/projects/project-slide-3.png" alt="" />
               </div>
             </div>
 
-            <a className="carousel-control-prev" href="#project-carousel" role="button" data-bs-slide="prev">
+            <a className="portfolio-control-prev" href="#project-portfolio" role="button" data-bs-slide="prev">
               <svg width="40px" height="40px" viewBox="0 0 150 258" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
                   <g id="arrow-left" fill="#FFFFFF" fill-rule="nonzero">
                     <path
                       d="M4.1,120.5 L121.9,4.5 C126.6,-0.2 134.2,-0.2 138.9,4.5 L146,11.6 C150.7,16.3 150.7,23.9 146,28.6 L43.7,129 L145.9,229.4 C150.6,234.1 150.6,241.7 145.9,246.4 L138.8,253.5 C134.1,258.2 126.5,258.2 121.8,253.5 L4,137.5 C-0.6,132.8 -0.6,125.2 4.1,120.5 Z"
                       id="Shape"
-                    ></path>
+                    />
                   </g>
                 </g>
               </svg>
             </a>
-            <a className="carousel-control-next" href="#project-carousel" role="button" data-bs-slide="next">
+            <a className="portfolio-control-next" href="#project-portfolio" role="button" data-bs-slide="next">
               <svg width="40px" height="40px" viewBox="0 0 150 258" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
                   <g id="arrow-right" fill="#FFFFFF" fill-rule="nonzero">
                     <path
                       d="M145.9,137.5 L28.1,253.5 C23.4,258.2 15.8,258.2 11.1,253.5 L4,246.4 C-0.7,241.7 -0.7,234.1 4,229.4 L106.3,129 L4.1,28.6 C-0.6,23.9 -0.6,16.3 4.1,11.6 L11.2,4.5 C15.9,-0.2 23.5,-0.2 28.2,4.5 L146,120.5 C150.6,125.2 150.6,132.8 145.9,137.5 Z"
                       id="Shape"
-                    ></path>
+                    />
                   </g>
                 </g>
               </svg>
