@@ -108,7 +108,7 @@ const Project: React.FC<ProjcetProps> = (props) => {
           </p>
         </div>
         <div className="section-row">
-          <h3 className="section-title">Actions &amp; Outcomes</h3>
+          <h3 className="section-title">이슈대응 및 결과물</h3>
           <p>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
             atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique

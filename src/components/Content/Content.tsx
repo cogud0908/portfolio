@@ -9,7 +9,7 @@ const Section = () => {
 
         <div className="project-cards row mb-5">
           <Project
-            href={"/project/component"}
+            href={"javascript:void(0);"}
             title={"사내 컴포넌트 개발/유지보수"}
             thumbnail={"assets/images/projects/component.png"}
             skilles={["React", "Javascript"]}
@@ -48,7 +48,7 @@ const Section = () => {
             href={"javascript:void(0);"}
             title={"유권자 서비스 Full-Stack 개발"}
             thumbnail={"assets/images/projects/ElectionApp.png"}
-            skilles={["React", "Typescript", "NextJS", "NestJS", "postgresql"]}
+            skilles={["React", "Typescript", "NextJS", "NestJS", "Postgresql"]}
             summary={[
               <>유권자에 대한 정보 및 활동기록 등 다양한 정보와 접근성을 제공하는 프로젝트입니다.</>,
               <br />,
