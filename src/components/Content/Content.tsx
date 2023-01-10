@@ -21,7 +21,7 @@ const Section = () => {
             ]}
           />
           <Project
-            // href={"/project/webstorage"}
+            href={"javascript:void(0);"}
             title={"웹스토리지 서비스 UI 개발"}
             thumbnail={"assets/images/projects/webStorage.png"}
             skilles={["React", "Typescript", "Recoil"]}
@@ -33,7 +33,7 @@ const Section = () => {
             ]}
           />
           <Project
-            // href={"/project/electron"}
+            href={"javascript:void(0);"}
             title={"회계관리 DeskTop Application 개발"}
             thumbnail={"assets/images/projects/Electron_Main.png"}
             skilles={["React", "Javascript", "Electron", "Node.js"]}
@@ -45,7 +45,7 @@ const Section = () => {
             ]}
           />
           <Project
-            // href={"/project/electionApp"}
+            href={"javascript:void(0);"}
             title={"유권자 서비스 Full-Stack 개발"}
             thumbnail={"assets/images/projects/ElectionApp.png"}
             skilles={["React", "Typescript", "NextJS", "NestJS", "postgresql"]}
