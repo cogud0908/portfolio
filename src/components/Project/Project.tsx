@@ -24,7 +24,7 @@ const Project: React.FC<ProjcetProps> = (props) => {
           <p>
             회사 내에서 생산성을 높이기 위해 재사용이 높은 공통 컴포넌트를 개발하여 라이브러리로 관리함으로써 사용하기
             편하고 범용성이 있는 컴포넌트 제작을 목표로 한 프로젝트입니다. 범용적으로 사용되는 컴포넌트를 개발한
-            프로젝트부터 키보드로만 Grid 형식의 Form Element를 입력 할 수 있게 만드는 프로젝트, Grid를 손쉽게 사용할 수
+            프로젝트부터 Grid 형식의 Form Element를 키보드로만 입력 할 수 있게 만드는 프로젝트, Grid를 손쉽게 사용할 수
             있는 프로젝트 등 회사에 필요한 공통 컴포넌트를 개발하였습니다.
           </p>
 
@@ -54,8 +54,8 @@ const Project: React.FC<ProjcetProps> = (props) => {
 
             <a className="portfolio-control-prev" href="#project-portfolio" role="button" data-bs-slide="prev">
               <svg width="40px" height="40px" viewBox="0 0 150 258" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
-                  <g id="arrow-left" fill="#FFFFFF" fill-rule="nonzero">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <g id="arrow-left" fill="#FFFFFF" fillRule="nonzero">
                     <path
                       d="M4.1,120.5 L121.9,4.5 C126.6,-0.2 134.2,-0.2 138.9,4.5 L146,11.6 C150.7,16.3 150.7,23.9 146,28.6 L43.7,129 L145.9,229.4 C150.6,234.1 150.6,241.7 145.9,246.4 L138.8,253.5 C134.1,258.2 126.5,258.2 121.8,253.5 L4,137.5 C-0.6,132.8 -0.6,125.2 4.1,120.5 Z"
                       id="Shape"
@@ -66,8 +66,8 @@ const Project: React.FC<ProjcetProps> = (props) => {
             </a>
             <a className="portfolio-control-next" href="#project-portfolio" role="button" data-bs-slide="next">
               <svg width="40px" height="40px" viewBox="0 0 150 258" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
-                  <g id="arrow-right" fill="#FFFFFF" fill-rule="nonzero">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <g id="arrow-right" fill="#FFFFFF" fillRule="nonzero">
                     <path
                       d="M145.9,137.5 L28.1,253.5 C23.4,258.2 15.8,258.2 11.1,253.5 L4,246.4 C-0.7,241.7 -0.7,234.1 4,229.4 L106.3,129 L4.1,28.6 C-0.6,23.9 -0.6,16.3 4.1,11.6 L11.2,4.5 C15.9,-0.2 23.5,-0.2 28.2,4.5 L146,120.5 C150.6,125.2 150.6,132.8 145.9,137.5 Z"
                       id="Shape"
@@ -80,7 +80,7 @@ const Project: React.FC<ProjcetProps> = (props) => {
         </div>
 
         <div className="section-row">
-          <h3 className="section-title">Challenges &amp; Requirements</h3>
+          <h3 className="section-title">과제 및 요구사항</h3>
           <p>
             Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
             cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus
